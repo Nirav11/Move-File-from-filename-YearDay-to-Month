@@ -8,7 +8,7 @@ for f in os.listdir("folder"):
     folderName = f[-11:-4]
     print(folderName)
     dateStamp = datetime.strptime(folderName, '%Y%j')
-    monthStamp = str(dateStamp.monthStamp)
+    monthStamp = str(dateStamp.month)
     print(monthStamp)
     if not os.path.exists(monthStamp):
         os.mkdir(monthStamp)
